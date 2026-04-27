@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 export const processChatMessage = async (message: string): Promise<string> => {
