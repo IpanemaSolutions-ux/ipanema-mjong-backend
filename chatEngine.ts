@@ -1,6 +1,4 @@
-import "dotenv/config";
-import { GoogleGenerativeAI } from "@google/generative-ai";
-
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 export const processChatMessage = async (message: string): Promise<string> => {
   const apiKey = process.env.GOOGLE_API_KEY;
 
