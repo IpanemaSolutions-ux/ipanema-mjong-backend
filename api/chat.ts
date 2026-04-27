@@ -1,4 +1,4 @@
-import { processChatMessage } from "../chatEngine";
+import { processChatMessage } from "../chatEngine.js";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
