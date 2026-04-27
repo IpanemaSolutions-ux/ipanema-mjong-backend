@@ -13,17 +13,17 @@ module.exports = async function handler(req, res) {
   }
 
   try {
-    console.log("🔹 [M’JONG] Request:", req.body);
+    console.log("💎 [MJONG] Request:", req.body);
 
     const prompt = req.body.message || "Mensagem vazia";
     const result = await model.generateContent(prompt);
     const text = result.response.text();
 
-    console.log("🔹 [M’JONG] Gemini response:", text);
+    console.log("💎 [MJONG] Gemini response:", text);
 
     return res.status(200).json({ reply: text });
   } catch (error) {
-    console.error("🔻 [M’JONG ERROR]", error);
+    console.error("▼ [MJONG] ERROR", error);
     return res.status(500).json({ error: error.message });
   }
 };
