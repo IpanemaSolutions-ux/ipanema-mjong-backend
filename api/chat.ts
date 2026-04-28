@@ -32,6 +32,7 @@ export default async function handler(req, res) {
 
     const text = result.response.text();
 
+    
     console.log("💎 [M’JONG] Gemini response:", text);
 
     return res.status(200).json({ reply: text });
