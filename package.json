@@ -2,6 +2,9 @@
   "name": "ipanema-mjong-backend",
   "version": "1.0.0",
   "type": "commonjs",
+  "scripts": {
+    "build": "echo building"
+  },
   "dependencies": {
     "node-fetch": "^3.3.2",
     "@google/generative-ai": "^0.7.0",
